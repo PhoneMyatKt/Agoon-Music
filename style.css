@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+}
+.heading1 {
+    font-size: 2rem;
+}
+
+.track {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    
+}
+.artist{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.songDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackimage {
+    background-image: url("");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 15%;
+    margin: 40px 20px 25px ;
+}
+.button {
+    display: flex;
+    align-items: center;
+}
+.playpausebtn{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.previousbtn, .playpausebtn, .nextbtn {
+    padding-top: 10px;
+    transition: 0.3s;
+}
+.previousbtn:hover, .playpausebtn:hover, .nextbtn:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+i {
+    cursor: pointer;
+}
+
+.timeDiv {
+    
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentDisplay, .totalDisplay {
+    font-size: 15px;
+    margin: 0px 5px 0px;
+}
+.totalTimeLength {
+    width: 400px;
+    height: 4px;
+    background-color: rgb(91, 88, 88, 0.5);
+}
+.currentTime {
+    width: 0%;
+    height: 4px;
+    background-color:black;
+    opacity: 0.6;
+}
+.hidden {
+    display: none;
+}
